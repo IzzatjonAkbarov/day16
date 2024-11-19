@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorìe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/img/logo2.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div id="content" style="display: none">
+      <!-- Your main content goes here -->
+    </div>
+    <!-- header start -->
+    <header class="">
+      <div class="container2 flex items-center justify-between py-3">
+        <nav class="flex items-center gap-14">
+          <a href=""><img src="./src/assets/img/logo.png" alt="" /></a>
+          <ul
+            class="flex items-center gap-14 text-[18px] font-normal max-[799px]:hidden">
+            <li class="hover:text-[#3a85f4]"><a href="">Аналитика</a></li>
+            <li class="hover:text-[#3a85f4]"><a href="">Сообщество</a></li>
+            <li class="hover:text-[#3a85f4]"><a href="">Для организаций</a></li>
+          </ul>
+        </nav>
+        <nav
+          class="flex items-center gap-14 text-[18px] font-normal max-[380px]:gap-3">
+          <button
+            class="border border-[#3a85f4] rounded-[50px] py-1 px-5 text-[#3a85f4] hover:bg-[#3a85f4] hover:text-[#fff] transition">
+            <a href="./index.html" class="max-[380px]:hidden">Создать заявку</a>
+            <a href="./index.html" class="hidden max-[380px]:block">+ заявка</a>
+          </button>
+          <button class="text-[#3a85f4] max-[955px]:hidden">
+            <i class="fa-solid fa-earth-americas"></i>
+          </button>
+          <button class="text-[#3a85f4] max-[878px]:hidden">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </button>
+          <label for="check" class="hidden max-[799px]:block"
+            ><i class="fa-solid fa-bars-staggered"></i
+          ></label>
+        </nav>
+      </div>
+    </header>
+    <div class="container2">
+      <h1
+        class="text-[40px] text-[#4d4d4d] font-bold py-[60px] max-[425px]:text-[30px] max-[425px]:py-4">
+        Создание заявки
+      </h1>
+    </div>
+
+    <!-- header end -->
+    <!-- section start  -->
+    <section>
+      <div class="container2">
+        <div
+          class="flex justify-between max-[1006px]:flex-col-reverse max-[435px]:text-[14px]">
+          <div class="bg-[#E7F0FF] rounded-t-[15px]">
+            <button
+              class="bg-[#F9FBFF] py-5 text-[#6b88b6] text-[20px] font-medium px-20 rounded-t-[15px] max-[572px]:px-5 max-[435px]:text-[14px]">
+              Я заказчик
+            </button>
+            <button
+              class="bg-transparent py-5 text-[#99afd3] text-[20px] font-medium px-20 max-[572px]:px-5 max-[435px]:text-[14px]">
+              Я исполнитель
+            </button>
+          </div>
+          <p class="py-5">
+            Для публикации заявки вам необходимо
+            <span class="text-blue-700">зарегистрироваться.</span>
+          </p>
+        </div>
+        <div class="pt-20 bg-[#F9FBFF] rounded-r-[20px] rounded-bl-[20px]">
+          <div class="mx-16 max-[492px]:mx-2">
+            <div class="flex justify-between py-4">
+              <h2 class="flex items-center gap-2">
+                <img src="./src/assets/svg/secondarrow.svg" alt="" />Я хочу
+              </h2>
+              <h2 class="flex items-center gap-2 max-[835px]:hidden">
+                <img src="./src/assets/svg/secondarrow.svg" alt="" />Я предлагаю
+              </h2>
+              <div></div>
+            </div>
+            <div
+              class="flex justify-between bg-white rounded-[12px] max-[835px]:block max-[835px]:bg-transparent">
+              <div
+                class="bg-white p-6 rounded-[12px] my-6 max-[492px]:p-3 max-[492px]:text-[12px]">
+                <div class="flex flex-col gap-2">
+                  <label for="all" class="flex items-center gap-2">
+                    <input id="all" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p>
+                  </label>
+                  <label for="1" class="flex items-center gap-2">
+                    <input id="1" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p> </label
+                  ><label for="2" class="flex items-center gap-2">
+                    <input id="2" type="checkbox" class="rounded-[50%]" />
+                    <p>Стать соавтором</p> </label
+                  ><label for="3" class="flex items-center gap-2">
+                    <input id="3" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать исследования</p> </label
+                  ><label for="4" class="flex items-center gap-2">
+                    <input id="4" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать работу с текстом и графикой</p> </label
+                  ><label for="9" class="flex items-center gap-2">
+                    <input id="9" type="checkbox" class="rounded-[50%]" />
+                    <p>Найти эксперта</p> </label
+                  ><label for="5" class="flex items-center gap-2">
+                    <input id="5" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p> </label
+                  ><label for="6" class="flex items-center gap-2">
+                    <input id="6" type="checkbox" class="rounded-[50%]" />
+                    <p>Стать соавтором</p> </label
+                  ><label for="7" class="flex items-center gap-2">
+                    <input id="7" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать работу с текстом и графикой</p> </label
+                  ><label for="8" class="flex items-center gap-2">
+                    <input id="8" type="checkbox" class="rounded-[50%]" />
+                    <p>Найти эксперта</p>
+                  </label>
+                </div>
+              </div>
+              <div>
+                <div class="hidden max-[835px]:block">
+                  <h2 class="flex items-center gap-2">
+                    <img src="./src/assets/svg/secondarrow.svg" alt="" />Я
+                    предлагаю
+                  </h2>
+                </div>
+                <div
+                  class="bg-white p-6 rounded-[12px] my-6 max-[492px]:p-3 max-[492px]:text-[12px] flex flex-col gap-2">
+                  <label for="k" class="flex items-center gap-2">
+                    <input id="k" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p>
+                  </label>
+                  <label for="a" class="flex items-center gap-2">
+                    <input id="a" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p> </label
+                  ><label for="b" class="flex items-center gap-2">
+                    <input id="b" type="checkbox" class="rounded-[50%]" />
+                    <p>Стать соавтором</p> </label
+                  ><label for="c" class="flex items-center gap-2">
+                    <input id="c" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать исследования</p> </label
+                  ><label for="d" class="flex items-center gap-2">
+                    <input id="d" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать работу с текстом и графикой</p> </label
+                  ><label for="e" class="flex items-center gap-2">
+                    <input id="e" type="checkbox" class="rounded-[50%]" />
+                    <p>Найти эксперта</p> </label
+                  ><label for="f" class="flex items-center gap-2">
+                    <input id="f" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p> </label
+                  ><label for="g" class="flex items-center gap-2">
+                    <input id="g" type="checkbox" class="rounded-[50%]" />
+                    <p>Стать соавтором</p> </label
+                  ><label for="h" class="flex items-center gap-2">
+                    <input id="h" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать работу с текстом и графикой</p> </label
+                  ><label for="i" class="flex items-center gap-2">
+                    <input id="i" type="checkbox" class="rounded-[50%]" />
+                    <p>Найти эксперта</p>
+                  </label>
+                </div>
+              </div>
+              <div>
+                <h2 class="flex items-center gap-2"></h2>
+                <div class="my-6 py-6 max-[1131px]:hidden flex flex-col gap-2">
+                  <label for="l" class="flex items-center gap-2">
+                    <input id="l" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p>
+                  </label>
+                  <label for="m" class="flex items-center gap-2">
+                    <input id="m" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p> </label
+                  ><label for="n" class="flex items-center gap-2">
+                    <input id="n" type="checkbox" class="rounded-[50%]" />
+                    <p>Стать соавтором</p> </label
+                  ><label for="o" class="flex items-center gap-2">
+                    <input id="o" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать исследования</p> </label
+                  ><label for="p" class="flex items-center gap-2">
+                    <input id="p" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать работу с текстом и графикой</p> </label
+                  ><label for="q" class="flex items-center gap-2">
+                    <input id="q" type="checkbox" class="rounded-[50%]" />
+                    <p>Найти эксперта</p> </label
+                  ><label for="r" class="flex items-center gap-2">
+                    <input id="r" type="checkbox" class="rounded-[50%]" />
+                    <p>Повысить цитируемость своих работ</p> </label
+                  ><label for="s" class="flex items-center gap-2">
+                    <input id="s" type="checkbox" class="rounded-[50%]" />
+                    <p>Стать соавтором</p> </label
+                  ><label for="t" class="flex items-center gap-2">
+                    <input id="t" type="checkbox" class="rounded-[50%]" />
+                    <p>Заказать работу с текстом и графикой</p> </label
+                  ><label for="u" class="flex items-center gap-2">
+                    <input id="u" type="checkbox" class="rounded-[50%]" />
+                    <p>Найти эксперта</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section>
+            <div class="container2 py-6">
+              <h2
+                class="text-[20px] text-blue-700 font-bold flex items-center gap-2 my-5">
+                <img src="./src/assets/svg/message.svg" alt="" />Описание работы
+              </h2>
+              <textarea
+                placeholder="Введите описание"
+                class="w-full h-40 p-4 outline-blue-700"></textarea>
+            </div>
+          </section>
+          <section>
+            <div
+              class="container2 flex gap-4 justify-between max-[1080px]:flex-col">
+              <div class="w-[30%] max-[1064px]:w-full">
+                <h2
+                  class="flex items-center gap-1 text-[18px] text-blue-500 font-medium my-[20px]">
+                  <img src="./src/assets/svg/smth.svg" alt="" />
+                  Ключевые слова
+                </h2>
+                <div class="bg-white rounded-[12px] p-4 flex flex-wrap gap-2">
+                  <div
+                    class="p-2 border border-[#c7c7c7] rounded-[50px] flex items-center gap-2 w-fit">
+                    <p class="text-[12px] max-[300px]:text-[10px]">
+                      первый и очень сильно длинный ключ
+                    </p>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div
+                    class="p-2 border border-[#c7c7c7] rounded-[50px] flex items-center gap-2 w-fit">
+                    <p class="text-[12px]">второй ключ</p>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div
+                    class="p-2 border border-[#c7c7c7] rounded-[50px] flex items-center gap-2 w-fit">
+                    <p class="text-[12px]">третий ключ</p>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div
+                    class="p-2 border border-[#c7c7c7] rounded-[50px] flex items-center gap-2 w-fit">
+                    <p class="text-[12px]">четвертый ключ</p>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div
+                    class="p-2 border border-[#c7c7c7] rounded-[50px] flex items-center gap-2 w-fit">
+                    <p class="text-[12px]">пятый ключ</p>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <div
+                    class="p-2 border border-[#c7c7c7] rounded-[50px] flex items-center gap-2 w-fit">
+                    <p class="text-[12px]">шестой ключ</p>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <div>
+                  <p
+                    class="text-[gray] font-semibold my-4 max-[307px]:text-[14px]">
+                    Пример: Первый ключ; Второй ключ;
+                  </p>
+                </div>
+              </div>
+
+              <div class="max-[555px]:w-[100%] overflow-scroll">
+                <h2
+                  class="flex items-center gap-1 text-[18px] text-blue-500 font-medium my-[20px]">
+                  <img src="./src/assets/svg/chart.svg" alt="" />
+                  Область знаний
+                </h2>
+                <div
+                  class="bg-white rounded-[12px] p-4 flex gap-10 justify-between">
+                  <div class="flex flex-col gap-2">
+                    <label for="11" class="flex items-center gap-2">
+                      <input id="11" type="checkbox" />
+                      <p>Biology/Genetics</p>
+                    </label>
+                    <label for="12" class="flex items-center gap-2">
+                      <input id="12" type="checkbox" />
+                      <p>Neuro/Psycho</p> </label
+                    ><label for="13" class="flex items-center gap-2">
+                      <input id="13" type="checkbox" />
+                      <p>Medicine/Pharma</p> </label
+                    ><label for="14" class="flex items-center gap-2">
+                      <input id="14" type="checkbox" />
+                      <p>Chemistry</p>
+                    </label>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label for="15" class="flex items-center gap-2">
+                      <input id="15" type="checkbox" />
+                      <p>Math/Computer</p>
+                    </label>
+                    <label for="16" class="flex items-center gap-2">
+                      <input id="16" type="checkbox" />
+                      <p>Physics/Astronomy</p> </label
+                    ><label for="17" class="flex items-center gap-2">
+                      <input id="17" type="checkbox" />
+                      <p>Engineering/Material</p> </label
+                    ><label for="18" class="flex items-center gap-2">
+                      <input id="18" type="checkbox" />
+                      <p>Earth/Environment</p>
+                    </label>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label for="19" class="flex items-center gap-2">
+                      <input id="19" type="checkbox" />
+                      <p>Social</p>
+                    </label>
+                    <label for="1a" class="flex items-center gap-2">
+                      <input id="1a" type="checkbox" />
+                      <p>Humanities/Arts</p> </label
+                    ><label for="1b" class="flex items-center gap-2">
+                      <input id="1b" type="checkbox" />
+                      <p>Management/Economics</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2
+                  class="flex items-center gap-1 text-[18px] text-blue-500 font-medium my-[20px]">
+                  Срок исполнения
+                </h2>
+                <div class="bg-white rounded-[12px] p-4 flex flex-wrap gap-2">
+                  <input type="date" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <div
+            class="container2 flex items-center justify-between pt-14 pb-4 max-[500px]:flex-col-reverse gap-4">
+            <p></p>
+            <p class="flex items-center gap-2 text-[18px]">
+              <img src="./src/assets/svg/hide.svg" alt="" /> Приватная заявка
+            </p>
+            <p class="flex items-center gap-2 text-[18px] text-[#b0d0ff]">
+              <img src="./src/assets/svg/bucket.svg" alt="" /> Приватная заявка
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end  -->
+    <!-- section start -->
+    <section>
+      <div class="container2 py-20">
+        <div class="flex items-center justify-center flex-col text-center">
+          <div class="flex max-[500px]:flex-col-reverse gap-3 mb-5">
+            <button
+              class="border border-[#3a85f4] rounded-[50px] py-1 px-5 text-[#3a85f4] hover:bg-[#3a85f4] hover:text-[#fff] transition">
+              + добавить заявку
+            </button>
+            <button
+              class="border bg-blue-500 text-[#fff] rounded-[50px] py-1 px-5 hover:text-[#3a85f4] hover:bg-[#fff] transition max-[350px]:text-[13px]">
+              Зарегистрироваться и Опубликовать
+            </button>
+          </div>
+          <div>
+            <p class="text-[#8d8484]">
+              Вам не придется заново заполнять форму, после регистрации <br />
+              ваша заявка будет отправлена на публикацию.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sectionend -->
+    <!-- section start -->
+
+    <!-- section end -->
+    <!-- footer start -->
+    <footer class="bg-[#262628] text-[#fff] py-6">
+      <div
+        class="w-[90%] m-auto flex justify-between max-[1077px]:grid grid-cols-1 gap-2">
+        <div
+          class="flex gap-[60px] max-[985px]:justify-between max-[985px]:gap-5 max-[483px]:flex-col">
+          <p>
+            Authortie <br />
+            <span class="text-[gray] block"> © Все права защищены</span>
+          </p>
+          <ul class="flex gap-[60px] max-[985px]:flex-col max-[985px]:gap-2">
+            <li><a href="">Политика конфиденциальности</a></li>
+            <li><a href="">Аналитика</a></li>
+            <li><a href="">Сообщество</a></li>
+            <li><a href="">Для организаций</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#"><img src="./src/assets/svg/fcbk.svg" alt="" /></a>
+          <a href="#"><img src="./src/assets/svg/inst.svg" alt="" /></a>
+          <a href="#"><img src="./src/assets/svg/tg.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 2000); // 2 seconds
+      });
+    </script>
+  </body>
+</html>
+<input id="check" type="checkbox" class="hidden" />
+<header class="sidebar hidden max-[799px]:block relative">
+  <label for="check" class="absolute top-[5%] right-[10%]"
+    ><i class="fa-solid fa-xmark"></i>
+  </label>
+  <div class="container2 flex items-start gap-5 py-3 flex-col">
+    <nav class="flex items-start gap-14 flex-col">
+      <a href=""><img src="./src/assets/img/logo.png" alt="" /></a>
+      <ul class="flex items-start gap-14 text-[18px] font-normal flex-col">
+        <li class="hover:text-[#3a85f4]"><a href="">Аналитика</a></li>
+        <li class="hover:text-[#3a85f4]"><a href="">Сообщество</a></li>
+        <li class="hover:text-[#3a85f4]"><a href="">Для организаций</a></li>
+      </ul>
+    </nav>
+    <nav class="flex items-start gap-14 text-[18px] font-normal flex-col">
+      <button
+        class="border border-[#3a85f4] rounded-[50px] py-1 px-5 text-[#3a85f4] hover:bg-[#3a85f4] hover:text-[#fff] transition block">
+        <p class="max-[380px]:hidden">Создать заявку</p>
+        <p class="hidden max-[380px]:block">+ заявка</p>
+      </button>
+      <div class="flex gap-10">
+        <button class="text-[#3a85f4]">
+          <i class="fa-solid fa-earth-americas"></i>
+        </button>
+        <button class="text-[#3a85f4]">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

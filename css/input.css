@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+.container2 {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 1500px) {
+  .container2 {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 799px) {
+  .sidebar {
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    right: -100%;
+    width: 80%;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    transition: 0.5s;
+    border-left: 1px solid #f3f3f3;
+  }
+  #check:checked ~ .sidebar {
+    right: 0;
+  }
+}
+.showcase {
+  background: linear-gradient(110deg, #fff 0%, #cce7ff 100%);
+}
+@media (max-width: 1180px) {
+  br {
+    display: none;
+  }
+}
+.research {
+  box-shadow: 0 8px 23px 0 rgba(44, 128, 255, 0.2);
+  background: #fff;
+}
+.lastcard {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.06);
+  background: #fefeff;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Background while loading */
+  z-index: 1000;
+}
+
+.loader {
+  width: 120px;
+  height: 20px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffffff, #4465a7, #0969c4);
+  background-size: 300%;
+  animation: color-fill 2s infinite;
+}
+
+@keyframes color-fill {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Content Hidden Initially */
+#content {
+  display: none;
+}

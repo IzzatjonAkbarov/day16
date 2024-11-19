@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorìe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/img/logo2.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div id="content" style="display: none">
+      <!-- Your main content goes here -->
+    </div>
+    <!-- header start -->
+    <header class="">
+      <div class="container2 flex items-center justify-between py-3">
+        <nav class="flex items-center gap-14">
+          <a href=""><img src="./src/assets/img/logo.png" alt="" /></a>
+          <ul
+            class="flex items-center gap-14 text-[18px] font-normal max-[799px]:hidden">
+            <li class="hover:text-[#3a85f4]"><a href="">Аналитика</a></li>
+            <li class="hover:text-[#3a85f4]"><a href="">Сообщество</a></li>
+            <li class="hover:text-[#3a85f4]"><a href="">Для организаций</a></li>
+          </ul>
+        </nav>
+        <nav
+          class="flex items-center gap-14 text-[18px] font-normal max-[380px]:gap-3">
+          <button
+            class="border border-[#3a85f4] rounded-[50px] py-1 px-5 text-[#3a85f4] hover:bg-[#3a85f4] hover:text-[#fff] transition">
+            <a href="./application.html" class="max-[380px]:hidden"
+              >Создать заявку</a
+            >
+            <a href="./application.html" class="hidden max-[380px]:block"
+              >+ заявка</a
+            >
+          </button>
+          <button class="text-[#3a85f4] max-[955px]:hidden">
+            <i class="fa-solid fa-earth-americas"></i>
+          </button>
+          <button class="text-[#3a85f4] max-[878px]:hidden">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </button>
+          <label for="check" class="hidden max-[799px]:block"
+            ><i class="fa-solid fa-bars-staggered"></i
+          ></label>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- showcase start -->
+    <section class="showcase py-9">
+      <div
+        class="container2 flex items-center justify-between max-[1180px]:flex-col-reverse max-[1155px]:items-start">
+        <div class="">
+          <h1
+            class="text-[40px] font-extrabold text-[#2f2f2f] max-[590px]:text-[30px] max-[332px]:text-[20px]">
+            Сообщество <br />
+            взаимопомощи между учёными со всего мира
+          </h1>
+          <p
+            class="text-[20px] py-[33px] max-[590px]:text-[16px] max-[590px]:py-3 max-[332px]:text-[14px]">
+            Удобный сервис, который подберёт для вас коллег и поможет <br />
+            наладить с ними взаимовыгодное сотрудничество в областях <br />
+            совместных исследований, соавторства, рецензирования и <br />
+            повышения индекса цитирования.
+          </p>
+          <button
+            class="hover:bg-white px-8 py-4 border rounded-[50px] bg-blue-500 text-[#fff] uppercase font-bold text-[18px] hover:text-blue-500 transition max-[400px]:text-[14px]">
+            Присоединиться
+          </button>
+        </div>
+        <div>
+          <img
+            width="800px"
+            height="500px"
+            src="./src/assets/img/showcaseimg.png"
+            alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- showcaseend -->
+    <!-- section step start -->
+    <section class="">
+      <div class="container2 py-20">
+        <h1 class="text-center font-bold text-[30px] text-[#383838]">
+          Как это работает
+        </h1>
+        <div
+          class="flex justify-between py-12 max-[1030px]:grid grid-cols-2 max-[1030px]:items-start mx-auto">
+          <div
+            class="w-[266px] max-[572px]:w-[120px] mb-3 hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1.0]">
+            <div class="p-6 mb-6 rounded-[10px] bg-white research">
+              <img
+                class="w-[170px] h-[160px] max-[572px]:h-[80px]"
+                src="./src/assets/img/card1.png"
+                alt="" />
+            </div>
+            <p class="text-center text-[#2f2f2f] text-[16px] font-normal">
+              Оцените привлекательность <br />
+              <span class="block">темы</span>
+            </p>
+          </div>
+          <img
+            class="max-[1030px]:hidden"
+            src="./src/assets/svg/arrowright.svg"
+            alt="" />
+
+          <div
+            class="w-[266px] max-[572px]:w-[120px] mb-3 hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1.0]">
+            <div class="p-6 mb-6 rounded-[10px] bg-white research">
+              <img
+                width="170px"
+                height="160px"
+                class="h-[170px] w-[160px] max-[572px]:h-[80px]"
+                src="./src/assets/img/card2.png"
+                alt="" />
+            </div>
+            <p class="text-center text-[#2f2f2f] text-[16px] font-normal">
+              Выполните совместные <br />
+              <span class="block">исследования</span>
+            </p>
+          </div>
+          <img
+            class="max-[1030px]:hidden max-[572px]:h-[80px]"
+            src="./src/assets/svg/arrowright.svg"
+            alt="" />
+          <div
+            class="w-[266px] max-[572px]:w-[120px] mb-3 hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1.0]">
+            <div class="p-6 mb-6 rounded-[10px] bg-white research">
+              <img
+                class="h-[160px] w-[170px] max-[572px]:h-[80px]"
+                src="./src/assets/img/card3.png"
+                alt="" />
+            </div>
+            <p class="text-center text-[#2f2f2f] text-[16px] font-normal">
+              Улучшите написанную работу
+            </p>
+          </div>
+          <img
+            class="max-[1030px]:hidden"
+            src="./src/assets/svg/arrowright.svg"
+            alt="" />
+          <div
+            class="w-[266px] max-[572px]:w-[120px] mb-3 hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1.0]">
+            <div class="p-6 mb-6 rounded-[10px] bg-white research">
+              <img
+                class="h-[160px] w-[170px] max-[572px]:h-[80px]"
+                src="./src/assets/img/card4.png"
+                alt="" />
+            </div>
+            <p class="text-center text-[#2f2f2f] text-[16px] font-normal">
+              Продвиньте свою работу
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end -->
+    <!-- section start -->
+    <section>
+      <div class="container2">
+        <div class="pb-10">
+          <h1 class="text-center font-bold text-[30px] text-[#383838]">
+            Сообщество
+          </h1>
+          <p class="text-center font-normal text-[16px] text-[#383838]">
+            Тысячи учёных уже предлагают свою помощь
+          </p>
+        </div>
+        <div class="flex justify-center flex-wrap gap-8 py-10">
+          <div
+            class="w-[410px] p-[25px] lastcard max-[463px]:w-[100%] max-[427px]:p-3 rounded-[10px] hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1]">
+            <div>
+              <button
+                class="rounded-[50px] bg-[#fdffe7] font-extrabold text-[11px] p-3 text-[#bc9300]">
+                Цитировать других
+              </button>
+              <button
+                class="rounded-[50px] bg-[#ebfffa] font-extrabold text-[11px] p-3 text-[#00a880]">
+                Neuro/Psycho
+              </button>
+            </div>
+            <p
+              class="text-[18px] font-semibold py-[25px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              Вопросы проектирования трансатлантического <br />
+              межнационального продуктопровода в условиях <br />
+              нарастающей коронавирусной пандемии
+            </p>
+            <div>
+              <h1>Комментарий</h1>
+              <p>Могу ещё помочь со статистической обработкой</p>
+            </div>
+            <div
+              class="py-[35px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              <h1>Вознаграждение</h1>
+              <div class="flex items center">
+                <img src="./src/assets/svg/dollar.svg" alt="" />
+                <p>$1000</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center pb-[15px] max-[400px]:py-[10px] gap-1 max-[350px]:text-[10px]">
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-1 px-3 py-2 my-2 overflow-hidden">
+                <img src="./src/assets/svg/smth.svg" alt="" />
+                первый и очень сильно длинный ключ
+              </button>
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-2 px-3 py-2">
+                +1
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-2 py-4 border border-x-0 mb-[15px] max-[400px]:mb-[10px]">
+              <img
+                class="rounded-[50%]"
+                src="./src/assets/img/avatar.png"
+                alt="" />
+              <div class="max-[350px]:text-[13px]">
+                <p class="flex items-center gap-1">
+                  Артём Белоусов <img src="./src/assets/svg/flag.svg" alt="" />
+                </p>
+                <p>учёный (кандидат наук)</p>
+                <p>Санкт-Петербургский горный университет</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <button
+                class="border bg-blue-500 text-[#fff] rounded-[50px] py-1 px-5 hover:text-[#3a85f4] hover:bg-[#fff] transition max-[350px]:text-[13px]">
+                Предложить сотрудничество
+              </button>
+              <button
+                class="border border-blue-600 rounded-[50%] text-[#3a85f4] p-1 px-2">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[410px] p-[25px] lastcard max-[463px]:w-[100%] max-[427px]:p-3 rounded-[10px] hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1]">
+            <div>
+              <button
+                class="rounded-[50px] bg-[#fdffe7] font-extrabold text-[11px] p-3 text-[#bc9300]">
+                Цитировать других
+              </button>
+              <button
+                class="rounded-[50px] bg-[#ebfffa] font-extrabold text-[11px] p-3 text-[#00a880]">
+                Neuro/Psycho
+              </button>
+            </div>
+            <p
+              class="text-[18px] font-semibold py-[25px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              Вопросы проектирования трансатлантического <br />
+              межнационального продуктопровода в условиях <br />
+              нарастающей коронавирусной пандемии
+            </p>
+            <div>
+              <h1>Комментарий</h1>
+              <p>Могу ещё помочь со статистической обработкой</p>
+            </div>
+            <div
+              class="py-[35px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              <h1>Вознаграждение</h1>
+              <div class="flex items center">
+                <img src="./src/assets/svg/dollar.svg" alt="" />
+                <p>$1000</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center pb-[15px] max-[400px]:py-[10px] gap-1 max-[350px]:text-[10px]">
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-1 px-3 py-2 my-2 overflow-hidden">
+                <img src="./src/assets/svg/smth.svg" alt="" />
+                первый и очень сильно длинный ключ
+              </button>
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-2 px-3 py-2">
+                +1
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-2 py-4 border border-x-0 mb-[15px] max-[400px]:mb-[10px]">
+              <img
+                class="rounded-[50%]"
+                src="./src/assets/img/avatar.png"
+                alt="" />
+              <div class="max-[350px]:text-[13px]">
+                <p class="flex items-center gap-1">
+                  Артём Белоусов <img src="./src/assets/svg/flag.svg" alt="" />
+                </p>
+                <p>учёный (кандидат наук)</p>
+                <p>Санкт-Петербургский горный университет</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <button
+                class="border bg-blue-500 text-[#fff] rounded-[50px] py-1 px-5 hover:text-[#3a85f4] hover:bg-[#fff] transition max-[350px]:text-[13px]">
+                Предложить сотрудничество
+              </button>
+              <button
+                class="border border-blue-600 rounded-[50%] text-[#3a85f4] p-1 px-2">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[410px] p-[25px] lastcard max-[463px]:w-[100%] max-[427px]:p-3 rounded-[10px] hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1]">
+            <div>
+              <button
+                class="rounded-[50px] bg-[#fdffe7] font-extrabold text-[11px] p-3 text-[#bc9300]">
+                Цитировать других
+              </button>
+              <button
+                class="rounded-[50px] bg-[#ebfffa] font-extrabold text-[11px] p-3 text-[#00a880]">
+                Neuro/Psycho
+              </button>
+            </div>
+            <p
+              class="text-[18px] font-semibold py-[25px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              Вопросы проектирования трансатлантического <br />
+              межнационального продуктопровода в условиях <br />
+              нарастающей коронавирусной пандемии
+            </p>
+            <div>
+              <h1>Комментарий</h1>
+              <p>Могу ещё помочь со статистической обработкой</p>
+            </div>
+            <div
+              class="py-[35px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              <h1>Вознаграждение</h1>
+              <div class="flex items center">
+                <img src="./src/assets/svg/dollar.svg" alt="" />
+                <p>$1000</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center pb-[15px] max-[400px]:py-[10px] gap-1 max-[350px]:text-[10px]">
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-1 px-3 py-2 my-2 overflow-hidden">
+                <img src="./src/assets/svg/smth.svg" alt="" />
+                первый и очень сильно длинный ключ
+              </button>
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-2 px-3 py-2">
+                +1
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-2 py-4 border border-x-0 mb-[15px] max-[400px]:mb-[10px]">
+              <img
+                class="rounded-[50%]"
+                src="./src/assets/img/avatar.png"
+                alt="" />
+              <div class="max-[350px]:text-[13px]">
+                <p class="flex items-center gap-1">
+                  Артём Белоусов <img src="./src/assets/svg/flag.svg" alt="" />
+                </p>
+                <p>учёный (кандидат наук)</p>
+                <p>Санкт-Петербургский горный университет</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <button
+                class="border bg-blue-500 text-[#fff] rounded-[50px] py-1 px-5 hover:text-[#3a85f4] hover:bg-[#fff] transition max-[350px]:text-[13px]">
+                Предложить сотрудничество
+              </button>
+              <button
+                class="border border-blue-600 rounded-[50%] text-[#3a85f4] p-1 px-2">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[410px] p-[25px] lastcard max-[463px]:w-[100%] max-[427px]:p-3 rounded-[10px] hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1]">
+            <div>
+              <button
+                class="rounded-[50px] bg-[#fdffe7] font-extrabold text-[11px] p-3 text-[#bc9300]">
+                Цитировать других
+              </button>
+              <button
+                class="rounded-[50px] bg-[#ebfffa] font-extrabold text-[11px] p-3 text-[#00a880]">
+                Neuro/Psycho
+              </button>
+            </div>
+            <p
+              class="text-[18px] font-semibold py-[25px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              Вопросы проектирования трансатлантического <br />
+              межнационального продуктопровода в условиях <br />
+              нарастающей коронавирусной пандемии
+            </p>
+            <div>
+              <h1>Комментарий</h1>
+              <p>Могу ещё помочь со статистической обработкой</p>
+            </div>
+            <div
+              class="py-[35px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              <h1>Вознаграждение</h1>
+              <div class="flex items center">
+                <img src="./src/assets/svg/dollar.svg" alt="" />
+                <p>$1000</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center pb-[15px] max-[400px]:py-[10px] gap-1 max-[350px]:text-[10px]">
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-1 px-3 py-2 my-2 overflow-hidden">
+                <img src="./src/assets/svg/smth.svg" alt="" />
+                первый и очень сильно длинный ключ
+              </button>
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-2 px-3 py-2">
+                +1
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-2 py-4 border border-x-0 mb-[15px] max-[400px]:mb-[10px]">
+              <img
+                class="rounded-[50%]"
+                src="./src/assets/img/avatar.png"
+                alt="" />
+              <div class="max-[350px]:text-[13px]">
+                <p class="flex items-center gap-1">
+                  Артём Белоусов <img src="./src/assets/svg/flag.svg" alt="" />
+                </p>
+                <p>учёный (кандидат наук)</p>
+                <p>Санкт-Петербургский горный университет</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <button
+                class="border bg-blue-500 text-[#fff] rounded-[50px] py-1 px-5 hover:text-[#3a85f4] hover:bg-[#fff] transition max-[350px]:text-[13px]">
+                Предложить сотрудничество
+              </button>
+              <button
+                class="border border-blue-600 rounded-[50%] text-[#3a85f4] p-1 px-2">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[410px] p-[25px] lastcard max-[463px]:w-[100%] max-[427px]:p-3 rounded-[10px] hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1]">
+            <div>
+              <button
+                class="rounded-[50px] bg-[#fdffe7] font-extrabold text-[11px] p-3 text-[#bc9300]">
+                Цитировать других
+              </button>
+              <button
+                class="rounded-[50px] bg-[#ebfffa] font-extrabold text-[11px] p-3 text-[#00a880]">
+                Neuro/Psycho
+              </button>
+            </div>
+            <p
+              class="text-[18px] font-semibold py-[25px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              Вопросы проектирования трансатлантического <br />
+              межнационального продуктопровода в условиях <br />
+              нарастающей коронавирусной пандемии
+            </p>
+            <div>
+              <h1>Комментарий</h1>
+              <p>Могу ещё помочь со статистической обработкой</p>
+            </div>
+            <div
+              class="py-[35px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              <h1>Вознаграждение</h1>
+              <div class="flex items center">
+                <img src="./src/assets/svg/dollar.svg" alt="" />
+                <p>$1000</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center pb-[15px] max-[400px]:py-[10px] gap-1 max-[350px]:text-[10px]">
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-1 px-3 py-2 my-2 overflow-hidden">
+                <img src="./src/assets/svg/smth.svg" alt="" />
+                первый и очень сильно длинный ключ
+              </button>
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-2 px-3 py-2">
+                +1
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-2 py-4 border border-x-0 mb-[15px] max-[400px]:mb-[10px]">
+              <img
+                class="rounded-[50%]"
+                src="./src/assets/img/avatar.png"
+                alt="" />
+              <div class="max-[350px]:text-[13px]">
+                <p class="flex items-center gap-1">
+                  Артём Белоусов <img src="./src/assets/svg/flag.svg" alt="" />
+                </p>
+                <p>учёный (кандидат наук)</p>
+                <p>Санкт-Петербургский горный университет</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <button
+                class="border bg-blue-500 text-[#fff] rounded-[50px] py-1 px-5 hover:text-[#3a85f4] hover:bg-[#fff] transition max-[350px]:text-[13px]">
+                Предложить сотрудничество
+              </button>
+              <button
+                class="border border-blue-600 rounded-[50%] text-[#3a85f4] p-1 px-2">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-[410px] p-[25px] lastcard max-[463px]:w-[100%] max-[427px]:p-3 rounded-[10px] hover:scale-[1.1] transition-[0.5s] max-[1000px]:hover:scale-[1]">
+            <div>
+              <button
+                class="rounded-[50px] bg-[#fdffe7] font-extrabold text-[11px] p-3 text-[#bc9300]">
+                Цитировать других
+              </button>
+              <button
+                class="rounded-[50px] bg-[#ebfffa] font-extrabold text-[11px] p-3 text-[#00a880]">
+                Neuro/Psycho
+              </button>
+            </div>
+            <p
+              class="text-[18px] font-semibold py-[25px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              Вопросы проектирования трансатлантического <br />
+              межнационального продуктопровода в условиях <br />
+              нарастающей коронавирусной пандемии
+            </p>
+            <div>
+              <h1>Комментарий</h1>
+              <p>Могу ещё помочь со статистической обработкой</p>
+            </div>
+            <div
+              class="py-[35px] max-[400px]:py-[10px] max-[350px]:text-[13px]">
+              <h1>Вознаграждение</h1>
+              <div class="flex items center">
+                <img src="./src/assets/svg/dollar.svg" alt="" />
+                <p>$1000</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center pb-[15px] max-[400px]:py-[10px] gap-1 max-[350px]:text-[10px]">
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-1 px-3 py-2 my-2 overflow-hidden">
+                <img src="./src/assets/svg/smth.svg" alt="" />
+                первый и очень сильно длинный ключ
+              </button>
+              <button
+                class="bg-slate-200 rounded-[50px] flex items-center gap-2 px-3 py-2">
+                +1
+              </button>
+            </div>
+            <div
+              class="flex items-center gap-2 py-4 border border-x-0 mb-[15px] max-[400px]:mb-[10px]">
+              <img
+                class="rounded-[50%]"
+                src="./src/assets/img/avatar.png"
+                alt="" />
+              <div class="max-[350px]:text-[13px]">
+                <p class="flex items-center gap-1">
+                  Артём Белоусов <img src="./src/assets/svg/flag.svg" alt="" />
+                </p>
+                <p>учёный (кандидат наук)</p>
+                <p>Санкт-Петербургский горный университет</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <button
+                class="border bg-blue-500 text-[#fff] rounded-[50px] py-1 px-5 hover:text-[#3a85f4] hover:bg-[#fff] transition max-[350px]:text-[13px]">
+                Предложить сотрудничество
+              </button>
+              <button
+                class="border border-blue-600 rounded-[50%] text-[#3a85f4] p-1 px-2">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end -->
+    <!-- footer start -->
+    <footer class="bg-[#262628] text-[#fff] py-6">
+      <div
+        class="w-[90%] m-auto flex justify-between max-[1077px]:grid grid-cols-1 gap-2">
+        <div
+          class="flex gap-[60px] max-[985px]:justify-between max-[985px]:gap-5 max-[483px]:flex-col">
+          <p>
+            Authortie <br />
+            <span class="text-[gray] block"> © Все права защищены</span>
+          </p>
+          <ul class="flex gap-[60px] max-[985px]:flex-col max-[985px]:gap-2">
+            <li><a href="">Политика конфиденциальности</a></li>
+            <li><a href="">Аналитика</a></li>
+            <li><a href="">Сообщество</a></li>
+            <li><a href="">Для организаций</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#"><img src="./src/assets/svg/fcbk.svg" alt="" /></a>
+          <a href="#"><img src="./src/assets/svg/inst.svg" alt="" /></a>
+          <a href="#"><img src="./src/assets/svg/tg.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 2000); // 2 seconds
+      });
+    </script>
+  </body>
+</html>
+<input id="check" type="checkbox" class="hidden" />
+<header class="sidebar hidden max-[799px]:block relative">
+  <label for="check" class="absolute top-[5%] right-[10%]"
+    ><i class="fa-solid fa-xmark"></i>
+  </label>
+  <div class="container2 flex items-start gap-5 py-3 flex-col">
+    <nav class="flex items-start gap-14 flex-col">
+      <a href=""><img src="./src/assets/img/logo.png" alt="" /></a>
+      <ul class="flex items-start gap-14 text-[18px] font-normal flex-col">
+        <li class="hover:text-[#3a85f4]"><a href="">Аналитика</a></li>
+        <li class="hover:text-[#3a85f4]"><a href="">Сообщество</a></li>
+        <li class="hover:text-[#3a85f4]"><a href="">Для организаций</a></li>
+      </ul>
+    </nav>
+    <nav class="flex items-start gap-14 text-[18px] font-normal flex-col">
+      <button
+        class="border border-[#3a85f4] rounded-[50px] py-1 px-5 text-[#3a85f4] hover:bg-[#3a85f4] hover:text-[#fff] transition block">
+        <p class="max-[380px]:hidden">Создать заявку</p>
+        <p class="hidden max-[380px]:block">+ заявка</p>
+      </button>
+      <div class="flex gap-10">
+        <button class="text-[#3a85f4]">
+          <i class="fa-solid fa-earth-americas"></i>
+        </button>
+        <button class="text-[#3a85f4]">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
